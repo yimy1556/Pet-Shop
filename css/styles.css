@@ -1,0 +1,13 @@
+.header {
+    /*background: url(../img/bg-header.jpeg) no-repeat center;*/
+    background-size: cover;
+    font-size: 1.5vw;
+ }
+
+.logo {
+    width: 6vw;
+}
+.text-logo {
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 2px black;
+}
