@@ -1,7 +1,21 @@
 .header {
-    /*background: url(../img/bg-header.jpeg) no-repeat center;*/
-    background-size: cover;
+    margin: 1vw 2vw;
     font-size: 1.5vw;
+ }
+
+.icon{
+    width: 1.7vw;
+}
+
+li.nav-item {
+    margin: 1vw 1vw;
+}
+
+.estilo-bienvenida{
+    margin: 2,5vw 0vw;
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 2px cadetblue;
+    font-size: 4vw;
  }
 
 .logo {
@@ -9,5 +23,21 @@
 }
 .text-logo {
     font-family: 'Lobster', cursive;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px cadetblue;
 }
+
+.dibujo-franco{
+    width: 30vw;
+}
+
+.row{
+    margin: 3vw 0vw 0vw 0vw;
+}
+
+iframe{
+    margin: 0vw 0vw 0vw 2vw;
+    border-radius: 4vw;
+    width: 15vw;
+    height: 15vw;
+}
+
