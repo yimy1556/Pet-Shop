@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="icon" type="image/png" href="/assets/lgo.png" />
+    <link rel="icon" href="./assets/lgo.ico"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rowdies&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header sticky-top">
+    <header class="header d-flex-col sticky-top">
         <nav class="justify-content-between navbar navbar-expand navbar-light bg-light bg-transparent">
             <div class="d-flex align-items-center">
                 <img class="logo" src="assets/lgo.png" alt="lgo">
@@ -19,18 +19,18 @@
             <div>
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> <img class="icon" src="./assets/home.svg" alt="icon-home"> Home<span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="index.html"> <img class="icon" src="./assets/home.svg" alt="icon-home">Home<span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"> <img class="icon" src="./assets/contact.svg" alt="icon-contact"> Contact</a>
+                        <a class="nav-link" href="contact.html"> <img class="icon" src="./assets/contact.svg" alt="icon-contact"> Contact</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img class="icon" src="./assets/shop.svg" alt="icon-shop"> Productos
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item text-center" href="prod1.html"><img class="icon-interno" src="assets/dog-bone.ico" alt="icon-prod">Jugetes</a>
+                            <a class="dropdown-item text-center" href="prod2.html"> <img class="icon-interno" src="assets/medical_services-24px.svg" alt="">Medicamentos</a>
                         </div>
                     </li>
                 </ul>
