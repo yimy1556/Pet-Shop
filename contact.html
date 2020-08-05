@@ -27,11 +27,11 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="icon" src="./assets/shop.svg" alt="icon-shop">Productos
+                                <img class="icon" src="./assets/shop.svg" alt="icon-shop"> Productos
                             </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="prod1.html">Juguetes</a>
-                                <a class="dropdown-item" href="prod2.html">Medicamentos</a>
+                            <div class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item text-center" href="prod1.html"><img class="icon-interno" src="assets/dog-bone.ico" alt="icon-prod">Jugetes</a>
+                                <a class="dropdown-item text-center" href="prod2.html"> <img class="icon-interno" src="assets/medical_services-24px.svg" alt="">Medicamentos</a>
                             </div>
                         </li>
                     </ul>
@@ -40,67 +40,68 @@
         </header>        
         <section>
             <h1 class="text-center estilo-bienvenida">formulario de contact</h1>
-            <form class="estilo-form needs-validation" novalidate>
+            <form class="estilo-form">
                 <h2 class="text-center estilo-informacion">Dotos Cliente</h2>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="validationTooltip01">Nombre</label>
-                        <input type="text" class="form-control" id="validationTooltip01">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" class="form-control" id="Nombre" v-model="formInformation">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="validationTooltip02">Apellido</label>
-                        <input type="password" class="form-control" id="validationTooltip02">
+                        <label for="Apellido">Apellido</label>
+                        <input type="password" class="form-control" id="Apellido">
                     </div>
                 </div>
                 <div class="form-row">
                 <div class="form-group col-md-6">
-                    <label for="validationTooltip03">Correo</label>
-                    <input type="text" class="form-control" id="validationTooltip03" placeholder="Ejem: 1234Exemple.com">
+                    <label for="Correo">Correo</label>
+                    <input type="text" class="form-control" id="Correo" placeholder="Ejem: 1234Exemple.com">
                 </div>
                 <div class="form-group col-md-6">
-                    <label for="validationTooltip04">Telefono</label>
-                    <input type="text" class="form-control" id="validationTooltip04" placeholder="Ejem: 158275324">
+                    <label for="Telefono">Telefono</label>
+                    <input type="text" class="form-control" id="Telefono" placeholder="Ejem: 158275324">
                 </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="validationTooltip05">Cantidad de Mascotas</label>
-                        <input type="number" class="form-control" id="validationTooltip05" v-model="numberOfPets">
+                        <label for="CantidadMascotas">Cantidad de Mascotas</label>
+                        <input type="number" class="form-control" id="CantidadMascotas">
                     </div>
                     <div class ="form-group col-md-6">
                         <p>Tipo de Mascotas</p>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Perros</label>
+                            <input class="form-check-input" type="checkbox" id="perros" value="P">
+                            <label class="form-check-label" for="perros">Perros</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Gatos</label>
+                            <input class="form-check-input" type="checkbox" id="gatos" value="G">
+                            <label class="form-check-label" for="gatos">Gatos</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                            <label class="form-check-label" for="inlineCheckbox1">Otros Tipos Mascotas</label>
+                            <input class="form-check-input" type="checkbox" id="otro" value="O">
+                            <label class="form-check-label" for="otro">Otros Tipos Mascotas</label>
                         </div>
+                    </div>
+                </div>
+                <h2 class="text-center estilo-informacion">Datos de la mascota</h2>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="nombreMascota">Nombre de la Moscota</label>
+                        <input type="text" class="form-control" id="nombreMascota">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="razaMascota">Raza de Mascotas</label>
+                        <input type="text" class="form-control" id="razaMascota">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="validationTooltip06">Nombre de la Moscota</label>
-                        <input type="text" class="form-control" id="validationTooltip06">
+                        <label for="edadMascota">Edad Moscota</label>
+                        <input type="text" class="form-control" id="edadMascota">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="validationTooltip07">Raza de Mascotas</label>
-                        <input type="text" class="form-control" id="validationTooltip07">
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="validationTooltip08">Edad Moscota</label>
-                        <input type="text" class="form-control" id="validationTooltip08">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="validationTooltip09">Telle ropa de Mascotas</label>
-                        <input type="text" class="form-control" id="validationTooltip09" >
+                        <label for="talleMascota">Telle ropa de Mascotas</label>
+                        <input type="text" class="form-control" id="talleMascota">
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
