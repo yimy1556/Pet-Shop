@@ -26,7 +26,13 @@ li.nav-item {
     font-family: 'Lobster', cursive;
     text-shadow: 2px 2px 2px cadetblue;
     font-size: 4vw;
- }
+}
+
+.estilo-informacion{
+    font-family: 'Lobster', cursive;
+    text-shadow: 2px 2px 2px cadetblue;
+    font-size: 2vw;
+}
 
 .logo {
     width: 6vw;
@@ -51,3 +57,6 @@ iframe{
     height: 15vw;
 }
 
+.estilo-form{
+    margin: 2vw 10vw;
+}
