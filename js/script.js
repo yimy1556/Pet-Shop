@@ -6,8 +6,6 @@ var app = new Vue({
     el: '#app',
     data: {
         pagina:'',
-        value1:0,
-        filtroStock:'',
         filterPrecio:'',
         listaDeMedicamento:[],
         listaDeJuguetes:[],
@@ -15,10 +13,11 @@ var app = new Vue({
     },
     computed: {
         articulosFinales(){
-            if(this.filterPrecio == this.filtroStock) return this[`listaDe${this.pagina}s`]
-            let articulos = (this.filtroStock == '')? this[`listaDe${this.pagina}s`].filter(art => art.stock <= 5):this[`listaDe${this.pagina}s`]    
-            (this.filterPrecio != '') && articulos.sort((a,b) => a.precio - b.precio)
-            return (filterPrecio == 'ME')? articulos.reverse():articulos
+            if(this.filterPrecio == '') return this[`listaDe${this.pagina}s`]
+            let articulos = [...(this[`listaDe${this.pagina}s`])]   
+            console.log(articulos); 
+            articulos.sort((a,b) => a.precio - b.precio)
+            return (this.filterPrecio != 'ME')? articulos.reverse():articulos
         },
         descri(){
             return (!this.show)? 'Mostrar Descripcion': 'Ocultar Descripcion'

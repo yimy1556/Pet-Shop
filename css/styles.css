@@ -5,8 +5,8 @@ body{
 }
 
 .header {
-    margin: 0vw 2vw;
     font-size: 1.75vw;
+    background-color: rgba(217, 217, 250, 0.356);
  }
 
 .icon{
@@ -51,9 +51,8 @@ li.nav-item {
 }
 
 iframe{
-    margin: 0vw 0vw 0vw 2vw;
     border-radius: 4vw;
-    width: 15vw;
+    width: 25vw;
     height: 15vw;
 }
 
@@ -61,17 +60,20 @@ iframe{
     margin: 2vw 10vw;
 }
 
-.o{
-    background-color: blue;
-    margin: 1.5vw 2vw;
-
-}
-.p{
-    background-color: brown;
-
-    margin: 1.5vw 2vw;
-}
-
 .card{
     margin: 1vw 1vw;
+    border-radius: 2vw;
+    border: 1px solid black;
+    font-size: 1.5vw;
+}
+
+.ultimos-stock{
+    position: absolute;
+    width: 19vw ;
+
+}
+
+article.col-4,div.col-4{
+    background-color: rgba(255, 255, 255, 0.719);
+    border-radius: 2vw;
 }
