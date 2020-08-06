@@ -6,7 +6,7 @@ body{
 
 .header {
     margin: 0vw 2vw;
-    font-size: 1.5vw;
+    font-size: 1.75vw;
  }
 
 .icon{
@@ -75,10 +75,3 @@ iframe{
 .card{
     margin: 1vw 1vw;
 }
-
-.fade-enter-active, .fade-leave-active {
-    transition: opacity 1s
-  }
-  .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
-    opacity: 0
-  }

@@ -6,6 +6,7 @@ var app = new Vue({
     el: '#app',
     data: {
         pagina:'',
+        value1:0,
         filtroStock:'',
         filterPrecio:'',
         listaDeMedicamento:[],
@@ -22,10 +23,33 @@ var app = new Vue({
         descri(){
             return (!this.show)? 'Mostrar Descripcion': 'Ocultar Descripcion'
         }
+    },
+    methods:{
+        mostrarArticulo: function(articulo){
+            Swal.fire({
+                title: articulo.nombre,
+                text: articulo.descripcion,
+                imageUrl: articulo.imagen,
+                imageWidth: 200,
+                imageHeight: 200,            
+            })
+        },
+        envioDeFormulario:function(){
+            Swal.fire({
+                title: 'Gracias',
+                imageUrl: '../assets/envioDeFormulario.png',
+                imageWidth: 200,
+                imageHeight: 200,
+                timer:20000
+            })
+        }
+
     }
 })
 
 const loadProduc = (products) => app[`listaDe${app.pagina}s`] = products.filter( product => product.tipo == app.pagina)
+
+
 
 $(document).ready(
     $.ajax({
@@ -37,3 +61,5 @@ $(document).ready(
         }
     })
 )
+
+console.log(app.value);
