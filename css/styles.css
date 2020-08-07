@@ -1,14 +1,17 @@
-body{
+#home, #contact{
     background-image: url(../assets/89633.jpg);
     background-repeat: no-repeat;
-    background-size: cover;    
+    background-size: cover;   
 }
 
 .header {
     font-size: 1.75vw;
-    background-color: rgba(217, 217, 250, 0.356);
+    background-color: rgba(204, 204, 250, 0.623);
+    border-radius: 1.5vw;
  }
-
+a{
+    font-weight: 900;
+}
 .icon{
     width: 1.7vw;
 }
@@ -22,10 +25,11 @@ li.nav-item {
 }
 
 .estilo-bienvenida{
-    margin: 2,5vw 0vw;
+    margin: 1vw 0vw 1.5vw 0vw;
     font-family: 'Lobster', cursive;
     text-shadow: 2px 2px 2px cadetblue;
     font-size: 4vw;
+    text-decoration: underline;
 }
 
 .estilo-informacion{
@@ -82,4 +86,30 @@ div.form-group{
     background-color: rgba(202, 241, 241, 0.514);
     border-radius: 1.5vw;
     font-weight: 900;
+}
+
+#Juguetes{
+    background-image: url(../assets/jugueteria.jpg);
+}
+#medicamentos{
+    background-image: url(../assets/med2.jpg);
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.473);
+}
+a{
+    color: black;
+}
+a p {
+    margin: 0vw;
+}
+footer p.text-center{
+    background-color: rgba(0, 0, 0, 0.411);
+    color: aliceblue;
+    margin: 0vw;
+}
+.redes{
+    width: 2.5vw;
+    margin: 0vw 2vw;
 }

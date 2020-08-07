@@ -38,35 +38,50 @@
                 </div>
             </nav>
         </header> 
-        <h2 class="text-center estilo-bienvenida">Juguetes Para Mascotas</h2>
-        <div class="container">
-            <div class="form-row justify-content-center">
-                <div class="form-group col-md-6">
-                    <p class="text-center">Orden de prioridad</p>
-                    <select class="form-control" id="select" v-model="filterPrecio">
-                        <option value="">Mas relevantes</option>
-                        <option value="ME" >Menor Precio</option>
-                        <option value="MA">Mayor Precio</option>
-                    </select>
+        <section>
+            <h2 class="text-center estilo-bienvenida">Juguetes Para Mascotas</h2>
+            <div class="container">
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-md-6">
+                        <p class="text-center">Orden de prioridad</p>
+                        <select class="form-control" id="select" v-model="filterPrecio">
+                            <option value="">Mas relevantes</option>
+                            <option value="ME" >Menor Precio</option>
+                            <option value="MA">Mayor Precio</option>
+                        </select>
+                    </div>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="container">
-            <div class=" row justify-content-between"> 
-                <div v-for="(articulos, index) in articulosFinales" v-bind:class="{ rojo : articulos.stock < 5}" class="card col-3 justify-content-center">
-                    <img :src="articulos.imagen" class="card-img-top" alt="...">
-                    <img v-if="articulos.stock <= 5" src="./assets/unnamed.png" class="ultimos-stock" alt="sdsd">
-                    <button v-on:click="mostrarArticulo(articulos)">
-                        {{descri}}
-                    </button>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item text-center">Precio {{articulos.precio}}$</li>
-                        <li class="list-group-item text-center"> {{articulos.stock}} Stock disponible</li>
-                    </ul>
+            <hr>
+            <div class="container">
+                <div class=" row justify-content-between"> 
+                    <div v-for="(articulos, index) in articulosFinales" v-bind:class="{ rojo : articulos.stock < 5}" class="card col-3 justify-content-center">
+                        <img :src="articulos.imagen" class="card-img-top" alt="...">
+                        <img v-if="articulos.stock <= 5" src="./assets/unnamed.png" class="ultimos-stock" alt="sdsd">
+                        <button v-on:click="mostrarArticulo(articulos)">
+                            {{descri}}
+                        </button>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item text-center">Precio {{articulos.precio}}$</li>
+                            <li class="list-group-item text-center"> {{articulos.stock}} Stock disponible</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <footer class="container-fluid">   
+            <div class="row justify-content-around">
+                <div class="d-flex align-items-center">
+                    <a href="index.html"><img class="logo" src="assets/lgo.png" alt="lgo"></a>
+                    <a href="index.html"><p class="text-logo">Franco<br>Pet-Shop</p></a>
+                </div>
+                <div class="d-flex align-self-center">
+                    <a href="https://www.instagram.com/"><img class="redes" src="./assets/instagram.png" alt="instagram"></a>
+                    <a href="https://www.youtube.com/"><img class="redes" src="./assets/youtube.png" alt="youtube"></a>
+                </div>
+            </div> 
+            <p class="text-center">© 2020 Copyrigth Franco pet-shop</p>        
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
