@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact</title>
     <link rel="icon" href="./assets/lgo.ico"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rowdies&display=swap" rel="stylesheet">
@@ -27,10 +27,10 @@
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <img class="icon" src="./assets/shop.svg" alt="icon-shop"> Productos
+                                <img class="icon" src="./assets/shop.svg" alt="icon-shop">Products
                             </a>
                             <div class="dropdown-menu bg-transparent" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item text-center" href="prod1.html"><img class="icon-interno" src="assets/dog-bone.ico" alt="icon-prod">Jugetes</a>
+                                <a class="dropdown-item text-center" href="prod1.html"><img class="icon-interno" src="assets/dog-bone.ico" alt="icon-prod">Juguetes</a>
                                 <a class="dropdown-item text-center" href="prod2.html"> <img class="icon-interno" src="assets/medical_services-24px.svg" alt="">Medicamentos</a>
                             </div>
                         </li>
@@ -39,8 +39,8 @@
             </nav>
         </header>        
         <section>
-            <h1 class="text-center estilo-bienvenida">formulario de contact</h1>
-            <form class="estilo-form" >
+            <h1 class="text-center estilo-bienvenida">formulario de contacto</h1>
+            <form class="estilo-form" v-on:submit.prevent="onSubmit">
                 <h2 class="text-center estilo-informacion">Dotos Cliente</h2>
                 <div class="form-row">
                     <div class="form-group col-md-6">
@@ -86,21 +86,21 @@
                 <h2 class="text-center estilo-informacion">Datos de la mascota</h2>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="nombreMascota">Nombre de la Moscota</label>
+                        <label for="nombreMascota">Nombre</label>
                         <input type="text" class="form-control" id="nombreMascota">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="razaMascota">Raza de Mascotas</label>
+                        <label for="razaMascota">Raza</label>
                         <input type="text" class="form-control" id="razaMascota">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-6">
-                        <label for="edadMascota">Edad Moscota</label>
+                        <label for="edadMascota">Edad</label>
                         <input type="text" class="form-control" id="edadMascota">
                     </div>
                     <div class="form-group col-md-6">
-                        <label for="talleMascota">Telle ropa de Mascotas</label>
+                        <label for="talleMascota">Talle ropa </label>
                         <input type="text" class="form-control" id="talleMascota">
                     </div>
                 </div>
@@ -111,7 +111,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button v-on:click="envioDeFormulario" class=" text-center btn btn-primary submit" type="input">Submit form</button>
+                    <button v-on:click="envioDeFormulario" class=" text-center btn btn-primary submit" type="reset">Submit form</button>
                 </div>
             </form>
         </section>

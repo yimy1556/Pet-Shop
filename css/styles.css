@@ -62,7 +62,7 @@ iframe{
 
 .card{
     margin: 1vw 1vw;
-    border-radius: 2vw;
+    border-radius: 1.5vw;
     border: 1px solid black;
     font-size: 1.5vw;
 }
@@ -76,4 +76,10 @@ iframe{
 article.col-4,div.col-4{
     background-color: rgba(255, 255, 255, 0.719);
     border-radius: 2vw;
+}
+
+div.form-group{
+    background-color: rgba(202, 241, 241, 0.514);
+    border-radius: 1.5vw;
+    font-weight: 900;
 }
