@@ -36,7 +36,7 @@ var app = new Vue({
         envioDeFormulario:function(){
             Swal.fire({
                 title: 'Gracias',
-                imageUrl: '../assets/envioDeFormulario.png',
+                imageUrl: 'assets/envioDeFormulario.png',
                 imageWidth: 200,
                 imageHeight: 200,
                 timer:20000
